@@ -4,6 +4,7 @@
   "type": "module",
   "main": "index.js",
   "dependencies": {
-    "discord.js-selfbot-v13": "^3.1.4"
+    "discord.js-selfbot-v13": "^3.1.4",
+    "debug": "^4.3.5"
   }
 }
