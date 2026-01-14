@@ -2,8 +2,8 @@ import { Client } from "discord.js-selfbot-v13";
 
 const client = new Client({ checkUpdate: false });
 
-// PUT YOUR CHANNEL ID HERE (I’ll explain below)
-const CHANNEL_ID = "PUT_CHANNEL_ID_HERE";
+// Your game channel ID
+const CHANNEL_ID = "1413630502383915019";
 
 const wait = (ms) => new Promise(r => setTimeout(r, ms));
 const rand = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
@@ -42,4 +42,5 @@ client.on("ready", async () => {
   }
 });
 
+// Token comes from Render Environment Variable
 client.login(process.env.TOKEN);
